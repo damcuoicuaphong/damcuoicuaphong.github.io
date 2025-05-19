@@ -41,7 +41,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Thiệp Mời Đám Cưới</title>
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -137,6 +137,11 @@
     // Hiển thị tên khách mời
     const guestNameElement = document.getElementById('guestName');
     guestNameElement.textContent = guestName;
+
+    // Kiểm tra nếu là thiết bị mobile và điều chỉnh scale
+    if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=0.8, user-scalable=yes');
+    }
   </script>
 </body>
 </html>
