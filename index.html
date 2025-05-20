@@ -44,6 +44,18 @@
 <meta property="og:title" content="Thiệp Mời Đám Cưới - Vương Phong & Ngọc Tuyền" />
 <meta property="og:description" content="Kính mời khách quý đến chung vui cùng chúng tôi vào ngày 14/07/2025 tại Quảng Trị." />
 <meta property="og:image" content="https://damcuoicuaphong.github.io/nen.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="twitter:title" content="Thiệp Mời Đám Cưới - Vương Phong & Ngọc Tuyền" />
+<meta property="twitter:description" content="Kính mời khách quý đến chung vui cùng chúng tôi vào ngày 14/07/2025 tại Quảng Trị." />
+<meta property="twitter:image" content="https://damcuoicuaphong.github.io/nen.jpg" />
+<meta property="twitter:type" content="website" />
+<meta property="twitter:locale" content="vi_VN" />
+<meta property="fb:title" content="Thiệp Mời Đám Cưới - Vương Phong & Ngọc Tuyền" />
+<meta property="fb:description" content="Kính mời khách quý đến chung vui cùng chúng tôi vào ngày 14/07/2025 tại Quảng Trị." />
+<meta property="fb:image" content="https://damcuoicuaphong.github.io/nen.jpg" />
+<meta property="fb:type" content="website" />
+<meta property="fb:locale" content="vi_VN" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta charset="utf-8"/>
 <title>Thiệp Mời Đám Cưới</title>
@@ -60,6 +72,7 @@
       background-position: center;
       background-attachment: fixed;
       min-height: 100vh;
+	  min-width: 600px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -70,19 +83,21 @@
       border-radius: 20px;
       padding: 2rem;
 	  margin-top: 1rem;
-      max-width: 600px;
+      max-width: 500px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       animation: fadeIn 1s ease-in-out;
 	  position: relative;
+	  margin: 1rem auto;
     }
 	.card2 {
       background: rgba(255, 255, 255, 0.95);
       border-radius: 20px;
       padding: 2rem;
-      max-width: 600px;
+      max-width: 500px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       animation: fadeIn 1s ease-in-out;
 	  position: relative;
+	  margin: 1rem auto;
     }
     .title {
       font-family: 'Great Vibes', cursive;
@@ -265,24 +280,32 @@
 <div class="trong1 transparent flex flex-col justify-center">
 </div>
 <script>
-    // Danh sách ánh xạ giữa name trong URL và tên đầy đủ
-    const guestList = {
-      'tuyen': 'Ngọc Tuyền',
-      'nam': 'Văn Nam',
-      'lan': 'Thị Lan',
-      'hieu': 'Trọng Hiếu'
-    };
+// Danh sách ánh xạ giữa name trong URL và tên đầy đủ
+const guestList = {
+  'tuyen': 'Ngọc Tuyền',
+  'nam': 'Văn Nam',
+  'lan': 'Thị Lan',
+  'hieu': 'Trọng Hiếu'
+};
 
-    // Lấy tên từ URL parameter
-    const urlParams = new URLSearchParams(window.location.search);
-    const nameKey = urlParams.get('name')?.toLowerCase() || '';
+// Lấy tên từ URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const nameKey = urlParams.get('name')?.toLowerCase() || '';
 
-    // Tra cứu tên đầy đủ từ guestList, nếu không có thì hiển thị "Khách Quý"
-    const guestName = guestList[nameKey] || 'Khách Quý';
+// Tra cứu tên đầy đủ từ guestList, nếu không có thì hiển thị "Khách Quý"
+const guestName = guestList[nameKey] || 'Khách Quý';
 
-    // Hiển thị tên khách mời
-    const guestNameElement = document.getElementById('guestName');
-    guestNameElement.textContent = guestName;
-  </script>
+// Hiển thị tên khách mời
+const guestNameElement = document.getElementById('guestName');
+guestNameElement.textContent = guestName;
+</script>
+<script>
+  window.addEventListener('load', () => {
+    // Cuộn đến giữa chiều ngang của toàn trang
+    const centerX = window.screen.width - (document.body.clientWidth / 2);
+	console.log(centerX);
+    window.scrollBy(centerX, 0);
+  });
+</script>
 </body>
 </html>
