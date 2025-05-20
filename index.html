@@ -70,6 +70,7 @@
       max-width: 600px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       animation: fadeIn 1s ease-in-out;
+	  position: relative;
     }
 	.card2 {
       background: rgba(255, 255, 255, 0.95);
@@ -78,16 +79,17 @@
       max-width: 600px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       animation: fadeIn 1s ease-in-out;
+	  position: relative;
     }
     .title {
       font-family: 'Great Vibes', cursive;
       font-size: 4rem;
-      color: #d4a373;
+      color: #fab802;
     }
 	.myname {
       font-family: 'Great Vibes', cursive;
       font-size: 2rem;
-      color: #d4a373;
+      color: #fab802;
     }
 	.mynameand {
       font-size: 1rem;
@@ -114,7 +116,7 @@
     }
     .map-container {
       width: 100%;
-      height: 300px;
+      height: 450px;
       border-radius: 10px;
       overflow: hidden;
       margin-top: 1rem;
@@ -157,10 +159,70 @@
       display: block;
 	  margin-top: 2rem;
     }
+	.trong {
+      background: rgba(255, 255, 255, 0);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 600px;
+	  min-width: 600px;
+    }
+	.trong1 {
+      background: rgba(255, 255, 255, 0);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 600px;
+	  max-height: 200px;
+	  min-width: 600px;
+	  min-height: 200px;
+    }
+	.chuthichmap {
+	  margin-top: 2rem;
+    }
+    .corner-img {
+	  top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      object-fit: contain;
+      z-index: 10;
+    }
+	.corner-img1 {
+	  top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      object-fit: contain;
+      z-index: 10;
+    }
+	.corner-img2 {
+	  bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      object-fit: contain;
+      z-index: 10;
+    }
+	.corner-img3 {
+	  bottom: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      object-fit: contain;
+      z-index: 10;
+    }
   </style>
 </head>
 <body class="flex flex-col gap-10">
-<div class="card1 text-center mx-4 min-h-screen flex flex-col justify-center">
+<div class="card1">
+<img src="goc.png" class="corner-img top-left" alt="Trang trí góc trái trên">
+<img src="goc1.png" class="corner-img1 top-right" alt="Trang trí góc phải trên">
+<img src="goc2.png" class="corner-img2 bottom-left" alt="Trang trí góc trái dưới">
+<img src="goc3.png" class="corner-img3 bottom-right" alt="Trang trí góc phải dưới">
+<div class="text-center mx-4 min-h-screen flex flex-col justify-center">
 <div class="heart-frame">
   <img src="anh1.jpg" alt="Ảnh trái tim" />
 </div>
@@ -171,16 +233,23 @@
 <p class="text-lg mb-4">Sẽ được tổ chức vào lúc <strong>10 giờ 00 phút, ngày 14/07/2025 (20/06/2025 âm lịch)</strong></p>
 <p class="text-lg mb-4">Tại: <strong>Nhà riêng, thôn Tân Xuân Thọ, Hải Trường, Hải Lăng, Quảng Trị</strong></p>
 </div>
+</div>
 <div class="card2 text-center mx-4 min-h-screen flex flex-col justify-center">
+<img src="goc.png" class="corner-img top-left" alt="Trang trí góc trái trên">
+<img src="goc1.png" class="corner-img1 top-right" alt="Trang trí góc phải trên">
+<img src="goc2.png" class="corner-img2 bottom-left" alt="Trang trí góc trái dưới">
+<img src="goc3.png" class="corner-img3 bottom-right" alt="Trang trí góc phải dưới">
 <h2 class="text-xl font-bold text-gray-800 mb-4">Lịch Tháng 7 Năm 2025</h2><table class="w-full table-fixed border border-gray-300 text-sm text-gray-700"><thead><tr><th class="border p-1 bg-gray-100">CN</th><th class="border p-1 bg-gray-100">T2</th><th class="border p-1 bg-gray-100">T3</th><th class="border p-1 bg-gray-100">T4</th><th class="border p-1 bg-gray-100">T5</th><th class="border p-1 bg-gray-100">T6</th><th class="border p-1 bg-gray-100">T7</th></tr></thead><tbody><tr><td class="border p-2 text-center text-gray-400">-</td><td class="border p-2 text-center text-gray-400">-</td><td class="border p-2 text-center">01</td><td class="border p-2 text-center">02</td><td class="border p-2 text-center">03</td><td class="border p-2 text-center">04</td><td class="border p-2 text-center">05</td></tr><tr><td class="border p-2 text-center">06</td><td class="border p-2 text-center">07</td><td class="border p-2 text-center">08</td><td class="border p-2 text-center">09</td><td class="border p-2 text-center">10</td><td class="border p-2 text-center">11</td><td class="border p-2 text-center">12</td></tr><tr><td class="border p-2 text-center">13</td><td class="border p-2 text-center font-bold text-red-600 bg-red-100 rounded-full">14</td><td class="border p-2 text-center">15</td><td class="border p-2 text-center">16</td><td class="border p-2 text-center">17</td><td class="border p-2 text-center">18</td><td class="border p-2 text-center">19</td></tr><tr><td class="border p-2 text-center">20</td><td class="border p-2 text-center">21</td><td class="border p-2 text-center">22</td><td class="border p-2 text-center">23</td><td class="border p-2 text-center">24</td><td class="border p-2 text-center">25</td><td class="border p-2 text-center">26</td></tr><tr><td class="border p-2 text-center">27</td><td class="border p-2 text-center">28</td><td class="border p-2 text-center">29</td><td class="border p-2 text-center">30</td><td class="border p-2 text-center">31</td><td class="border p-2 text-center text-gray-400">-</td><td class="border p-2 text-center text-gray-400">-</td></tr></tbody></table>
-<p class="text-sm text-left mb-4"><strong>Vị trí nhà trên google map:</strong></p>
+<p class="chuthichmap text-sm text-left mb-4"><strong>Vị trí nhà trên google map:</strong></p>
 <!-- Google Maps Iframe -->
 <div class="map-container">
 <iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3822.2607153016925!2d107.263644!3d16.663832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDM5JzQ5LjgiTiAxMDfCsDE1JzQ5LjEiRQ!5e0!3m2!1svi!2s!4v1747637484509!5m2!1svi!2s" style="border:0;" width="600"></iframe>
 </div>
 <p class="text-gray-600 mt-6 mb-6">Sự hiện diện của quý khách là niềm vinh hạnh của chúng tôi <span class="heart">♥</span></p>
 </div>
-<div class="transparent text-center mx-4 min-h-screen flex flex-col justify-center">
+<div class="trong transparent text-center mx-4 min-h-screen flex flex-col justify-center">
+</div>
+<div class="trong1 transparent flex flex-col justify-center">
 </div>
 <script>
     // Danh sách ánh xạ giữa name trong URL và tên đầy đủ
