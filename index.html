@@ -227,7 +227,7 @@
 		  <img src="tim.jpg" alt="Ảnh trái tim" />
 		</div>
 		<h1 class="title mb-4">Thư Mời Đám Cưới</h1>
-		<p class="text-lg mb-2">Trân trọng kính mời: <span class="guest-name" id="guestName">Khách Quý</span></p>
+		<p class="text-lg mb-2">Trân trọng kính chào: <span class="guest-name" id="guestName" style="color: #0055AA;">Khách Quý</span></p>
 		<p class="text-gray-600 mb-4">Chúng tôi rất vui mừng thông báo về ngày cưới của:</p>
 		<h2 class="myname font-bold mb-2 flex justify-center">
 		  <span class="relative flex flex-col items-center">
@@ -308,9 +308,11 @@
 		<img src="anh.jpg" alt="Ảnh 3" class="w-full rounded-md" style="margin-top: 1rem;"/>
 	</div>
 	<div class="text-center mb-4">
-		<p class="font-bold">NHÀ GÁI</p>
-		<p>BÀ: LÊ THỊ THÀNH</p>
-		<p>Hải Định, Hải Lăng, T.Quảng Trị</p>
+		<p class="font-bold">TRÂN TRỌNG KÍNH MỜI</p>
+		<p class="guest-name-1 font-bold" id="guestName-1" style="margin-top: 0.8rem; margin-bottom: 0.8rem; color: #0055AA;">Khách Quý</span></p>
+		<p>ĐẾN DỰ BUỔI TIỆC CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI VÀO LÚC</p>
+		<p> <strong>10 giờ 30 phút, thứ 2 ngày 14/07/2025 (20/06/2025 âm lịch)</strong></p>
+		<p class="text-lg mb-4" style="margin-top: 0.8rem;">Vị trí tại: <strong>Khu tái định cư, thôn Tân Xuân Thọ, Hải Trường, Hải Lăng, Quảng Trị</strong></p>
 	</div>
 	<div class="flex items-center justify-between">
 		<p class="text-lg text-left" style="font-size: 0.8rem;">Thông tin mừng cưới cô dâu, chú rể:</p>
@@ -343,8 +345,8 @@
 		<div class="map-container">
 		<iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3822.2607153016925!2d107.263644!3d16.663832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDM5JzQ5LjgiTiAxMDfCsDE1JzQ5LjEiRQ!5e0!3m2!1svi!2s!4v1747637484509!5m2!1svi!2s" style="border:0;" width="600"></iframe>
 		</div>
-		<p class="text-gray-600 mt-6 mb-0">Sự hiện diện của quý khách là niềm vinh hạnh của chúng tôi <span class="heart">♥</span></p>
-		<p class="text-gray-600 mt-0 mb-6">Thiệp mời do chính cô dâu và chú rể thiết kế gửi tới <span class="guest-name-1" id="guestName-1">Khách Quý</span> một tấm lòng thành <span class="heart">♥</span></p>
+		<p class="text-gray-600 mt-6 mb-0">Sự hiện diện của <span class="guest-name-2" id="guestName-2" style="color: #0055AA;">Khách Quý</span> là niềm vinh hạnh của chúng tôi <span class="heart">♥</span></p>
+		<p class="text-gray-600 mt-0 mb-6">Thiệp mời do chính cô dâu và chú rể thiết kế gửi tới <span class="guest-name-3" id="guestName-3" style="color: #0055AA;">Khách Quý</span> một tấm lòng thành <span class="heart">♥</span></p>
 		<p class="kinhmoi font-bold">Kính mời!</p>
 		<p class="kyten text-sm text-right mb-4"><strong>Vương Viết Phong & Nguyễn Thị Ngọc Tuyền</strong></p>
 	</div>
@@ -392,6 +394,10 @@
 	guestNameElement.textContent = guestName;
 	const guestNameElement_1 = document.getElementById('guestName-1');
 	guestNameElement_1.textContent = guestName;
+	const guestNameElement_2 = document.getElementById('guestName-2');
+	guestNameElement_2.textContent = guestName;
+	const guestNameElement_3 = document.getElementById('guestName-3');
+	guestNameElement_3.textContent = guestName;
 </script>
 </body>
 </html>
