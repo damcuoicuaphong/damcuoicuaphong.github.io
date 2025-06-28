@@ -382,8 +382,9 @@
 	};
 
 	const urlParams = new URLSearchParams(window.location.search);
+	const tenKey = urlParams.get('ten') || '';
 	const nameKey = urlParams.get('name')?.toLowerCase() || '';
-	const guestName = guestList[nameKey] || 'Khách Quý';
+	const guestName = tenKey || guestList[nameKey] || 'Khách Quý';
 	const guestNameElement = document.getElementById('guestName');
 	guestNameElement.textContent = guestName;
 	const guestNameElement_1 = document.getElementById('guestName-1');
